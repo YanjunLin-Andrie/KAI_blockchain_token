@@ -113,26 +113,3 @@ Content incudes:
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-
----
-
-## Evaluation Evidence
-
-
-![compile1](pics/compile1.png)
-![compile2](pics/compile2.png)
-![compike3](pics/compile3.png)
-![deploy1](pics/deploy1.png)
-![mm1](pics/mm1.png)
-![deploy3](pics/deploy3.png)
-![deploy4](pics/deploy4.png)
-![deploy5](pics/deploy5.png)
-![deploy6](pics/deploy6.png)
-![buy1](pics/buy1.png)
-![buy2](pics/buy2.png)
-![mm2](pics/mm2.png)
-![buy3](pics/buy3.png)
-![buy4](pics/buy4.png)
-![buy5](pics/buy5.png)
-![buy6](pics/buy6.png)
