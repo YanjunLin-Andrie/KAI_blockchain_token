@@ -13,10 +13,10 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5
 // * MintedCrowdsale
 contract KaseiCoinCrowdsale is Crowdsale, MintedCrowdsale, CappedCrowdsale, TimedCrowdsale, RefundablePostDeliveryCrowdsale {
     
-    // Provide parameters for all of the features of your crowdsale, such as the `rate`, `wallet` for fundraising, and `token`.
+    // Provide parameters for all of the crowdsale features.
     constructor(
         uint256 rate, // rate in TKNbits
-        address payable wallet, // sale beneficiary
+        address payable wallet, // sale beneficiary(token goto wallet)
         KaseiCoin token, // the KaseiCoin itself that the KaseiCoinCrowdsale will work with
         uint goal, // the crowdsale goal
         uint open, // the crowdsale opening time
@@ -33,16 +33,16 @@ contract KaseiCoinCrowdsale is Crowdsale, MintedCrowdsale, CappedCrowdsale, Time
 
 
 contract KaseiCoinCrowdsaleDeployer {
-    // Create an `address public` variable called `kasei_token_address`.
+    // Create an `address public` variable.
     address public kasei_token_address;
-    // Create an `address public` variable called `kasei_crowdsale_address`.
+    // Create an `address public` variable.
     address public kasei_crowdsale_address;
 
     // Add the constructor.
     constructor(
         string memory name,
         string memory symbol,
-        address payable wallet, // this address will receive all Ether raised by the crowdsale
+        address payable wallet, // the address will receive all Ether raised by the crowdsale
         uint goal
     ) public {
         // Create a new instance of the KaseiCoin contract.
